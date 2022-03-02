@@ -19,7 +19,7 @@ std::string SampleDataStore::GetGradeResponse(std::string requestId, std::string
     nlohmann::json response;
 
     response[mk_keyType] = mk_responseType;         // "type" is always "gradeResponse"
-    response[mk_keyVersion] = mk_valueVersion;      // "version" is always "2.0"
+    response[mk_keyVersion] = mk_valueVersion;      // "version" is always "2.3"
     response[mk_keySystemId] = mk_valueSystemId;    // "systemId" is always "testServer"
     response[mk_keyRequestId] = requestId;          // "requestId" is the same as the given requestId
     response[mk_keyHaulingUnitId] = haulingUnitId;  // "haulingUnitId" is the same as the given haulingUnitId
